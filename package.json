@@ -1,15 +1,19 @@
 {
-  "name": "bootstrap-select",
-  "title": "bootstrap-select",
+  "name": "paladin-bootstrap-select",
+  "title": "paladin-bootstrap-select",
   "main": "dist/js/bootstrap-select.js",
-  "description": "A custom <select> for Bootstrap using button dropdown as replacement",
+  "description": "A custom <select> for Bootstrap using button dropdown as replacement. Suited for paladins",
   "version": "1.7.3",
-  "homepage": "http://silviomoreto.github.io/bootstrap-select",
+  "homepage": "https://github.com/paladinsoftware/paladin-bootstrap-select",
   "author": {
     "name": "Silvio Moreto",
     "url": "https://github.com/silviomoreto"
   },
   "contributors": [
+    {
+      "name": "Paladinsoftware",
+      "url": "https://github.com/paladinsoftware"
+    },
     {
       "name": "Silvio Moreto",
       "url": "https://github.com/silviomoreto"
@@ -33,11 +37,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/silviomoreto/bootstrap-select.git"
+    "url": "git://github.com/paladinsoftware/paladin-bootstrap-select.git"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE"
+    "url": "https://github.com/paldinsoftware/bootstrap-select/blob/master/LICENSE"
   },
   "dependencies": {
     "jquery": ">=1.8"
