@@ -3,7 +3,7 @@
   "title": "paladin-bootstrap-select",
   "main": "dist/js/bootstrap-select.js",
   "description": "A custom <select> for Bootstrap using button dropdown as replacement. Suited for paladins",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "homepage": "https://github.com/paladinsoftware/paladin-bootstrap-select",
   "author": {
     "name": "Silvio Moreto",
