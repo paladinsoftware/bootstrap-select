@@ -1283,6 +1283,12 @@
         that.$lis.filter('.active').removeClass('active');
         if (that.$searchbox.val()) that.$lis.not('.hidden, .divider, .dropdown-header').eq(0).addClass('active').children('a').focus();
         $(this).focus();
+
+        this.$searchbox.on('keyup', function (event) {
+          if (event.keyCode === 80 && event.ctrlKey) {
+            that.$element.trigger("searchbox.control_option.pressed", event.target.value);
+          }
+        });
       });
     },
 
