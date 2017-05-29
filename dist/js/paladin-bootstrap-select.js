@@ -1286,7 +1286,7 @@
 
         this.$searchbox.on('keyup', function (event) {
           if (event.keyCode === 80 && event.ctrlKey) {
-            that.$element.trigger("searchbox.enter.pressed", event.target.value);
+            that.$element.trigger("searchbox.control_option.pressed", event.target.value);
           }
         });
       });
