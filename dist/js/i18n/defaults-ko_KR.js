@@ -1,7 +1,7 @@
 /*!
- * Bootstrap-select v1.7.3 (https://github.com/paladinsoftware/paladin-bootstrap-select)
+ * Bootstrap-select v1.7.8 (https://github.com/paladinsoftware/paladin-bootstrap-select)
  *
- * Copyright 2013-2016 bootstrap-select
+ * Copyright 2013-2017 bootstrap-select
  * Licensed under MIT (https://github.com/paldinsoftware/bootstrap-select/blob/master/LICENSE)
  */
 
@@ -17,7 +17,7 @@
     // like Node.
     module.exports = factory(require("jquery"));
   } else {
-    factory(jQuery);
+    factory(root["jQuery"]);
   }
 }(this, function () {
 

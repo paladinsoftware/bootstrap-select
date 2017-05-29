@@ -1,7 +1,7 @@
 /*!
- * Bootstrap-select v1.7.3 (https://github.com/paladinsoftware/paladin-bootstrap-select)
+ * Bootstrap-select v1.7.8 (https://github.com/paladinsoftware/paladin-bootstrap-select)
  *
- * Copyright 2013-2016 bootstrap-select
+ * Copyright 2013-2017 bootstrap-select
  * Licensed under MIT (https://github.com/paldinsoftware/bootstrap-select/blob/master/LICENSE)
  */
 
@@ -17,7 +17,7 @@
     // like Node.
     module.exports = factory(require("jquery"));
   } else {
-    factory(jQuery);
+    factory(root["jQuery"]);
   }
 }(this, function () {
 
@@ -287,7 +287,7 @@
     this.init();
   };
 
-  Selectpicker.VERSION = '1.7.7';
+  Selectpicker.VERSION = '1.7.8';
 
   // part of this is duplicated in i18n/defaults-en_US.js. Make sure to update both.
   Selectpicker.DEFAULTS = {
@@ -1283,12 +1283,6 @@
         that.$lis.filter('.active').removeClass('active');
         if (that.$searchbox.val()) that.$lis.not('.hidden, .divider, .dropdown-header').eq(0).addClass('active').children('a').focus();
         $(this).focus();
-
-        this.$searchbox.on('keyup', function (event) {
-          if (event.keyCode === 80 && event.ctrlKey) {
-            that.$element.trigger("searchbox.control_option.pressed", event.target.value);
-          }
-        });
       });
     },
 
