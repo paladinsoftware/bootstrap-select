@@ -1,5 +1,5 @@
 /*!
- * Bootstrap-select v1.7.9 (https://github.com/paladinsoftware/paladin-bootstrap-select)
+ * Bootstrap-select v1.7.10 (https://github.com/paladinsoftware/paladin-bootstrap-select)
  *
  * Copyright 2013-2017 bootstrap-select
  * Licensed under MIT (https://github.com/paldinsoftware/bootstrap-select/blob/master/LICENSE)

@@ -1,5 +1,5 @@
 /*!
- * Bootstrap-select v1.7.9 (https://github.com/paladinsoftware/paladin-bootstrap-select)
+ * Bootstrap-select v1.7.10 (https://github.com/paladinsoftware/paladin-bootstrap-select)
  *
  * Copyright 2013-2017 bootstrap-select
  * Licensed under MIT (https://github.com/paldinsoftware/bootstrap-select/blob/master/LICENSE)
@@ -1284,10 +1284,11 @@
         if (that.$searchbox.val()) that.$lis.not('.hidden, .divider, .dropdown-header').eq(0).addClass('active').children('a').focus();
         $(this).focus();
 
-        this.$searchbox.on('keyup', function (event) {
-          if (event.keyCode === 80 && event.ctrlKey) {
-            that.$element.trigger("searchbox.control_option.pressed", event.target.value);
+        that.$searchbox.on('keyup', function(event) {
+          if (event.keyCode === 13) {
+            that.$element.trigger("searchbox.enter_key.pressed", event.target.value);
           }
+          event.stopImmediatePropagation();
         });
       });
     },
